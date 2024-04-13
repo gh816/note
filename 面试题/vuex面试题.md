@@ -1,0 +1,3 @@
+# vuex面试题
+
+vuex是用来存储管理应用的所有组件的状态，比如多个组件依赖于同一状态就可以用vuex进行存储管理。使用vuex首先要安装vuex，Vuex状态存储在state中，如果要改变state里的值需要通过mutation方法来改变，我们可以在组件中通过store.commit()来提交模块中的mutation，mutaton接收commit传过来的方法，这个方法接收两个参数，一个是state，另一个是commit提交的数据。可以通过引入useStore()然后通过定义一个store来接收useStore()然后通过store.state来访问vuex里state数据。Vuex中getters是用来获取store的数据，它类似于组件中的计算属性，可以基于state计算出一些新的属性，然后可以在其他组件中通过computed来访问这些属性。

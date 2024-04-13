@@ -1,0 +1,3 @@
+# Promise面试题
+
+Promise有三种状态：pending(进行中)，fulfilled(已成功)和rejected(已失败)。当promise对象被创建时，它处于pending状态。创建Promise对象包含两个参数，resolve和reject。resolve()表示异步操作成功时的返回结果，reject()表示异步操作失败时的返回结果。Promise对象有一些常用的API，then方法，这个方法接受两个参数，一个是Promise状态变为成功时的回调函数，另一个是状态变为失败时的回调函数。然后then方法里面可以return一个新的Promise对象，可以进行链式调用。catch()方法只接收promise状态为失败的回调函数。finally()方法是用来指定不管Promise对象状态是什么都会执行的回调函数。Promise.all()它接收一个数组作为参数，只有当所有的Promise都是成功状态才会返回结果。Promise.race()表示多个异步操作只返回最先执行完成的那个。Promise.allSettled()方法来处理多个异步操作无论是成功还是失败都会返回结果
