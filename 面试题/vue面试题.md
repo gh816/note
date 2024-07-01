@@ -30,6 +30,8 @@ vue3的diff算法
 
 6.响应式原理不同
 
+
+
 vue2通过Object.defineProperty()的get()和set()来做数据劫持，结合发布者订阅者模式来实现。
 
 vue3通过proxy代理方式实现

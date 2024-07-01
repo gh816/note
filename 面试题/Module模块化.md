@@ -19,3 +19,4 @@ export {obj，username}
 导入：
 
 import { obj, username} from './Module.js'
+
