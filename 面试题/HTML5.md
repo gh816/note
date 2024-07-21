@@ -18,6 +18,8 @@ section 标签通常用于划分页面内容，特别是在需要将内容分组
 
 ### 2.1video
 
+
+
 <video src='视频地址' >     
     <source src="...mp4" type="video/mp4"></source> 
 </video>
