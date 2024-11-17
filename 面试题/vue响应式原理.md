@@ -1,0 +1,3 @@
+# vue响应式原理
+
+首先给数据设置getter和setter（在vue2是通过Object.defindProperty vue3是Proxy），vue的render函数是通过watcher执行的(在vue3是effect)，当执行的过程中访问到了响应式数据就会执行getter方法，然后就是收集依赖 ，当对响应式数据进行修改的时候就会执行setter，setter就会在收集依赖去找有没有这个依赖，找到了就通过notify去更新依赖，然后从新执行watcher(在vue3是effect)去执行渲染函数去更新页面。

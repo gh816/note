@@ -1,0 +1,6 @@
+1.vue-router原理
+2.vue2和vue3的区别有哪些
+3.useState怎么让异步编程变成同步的
+4.vue的diff算法和react的diff有什么区别
+5.哪些东西会造成内存泄漏
+6.用css样式画一个三角形

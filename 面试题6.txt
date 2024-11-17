@@ -1,0 +1,10 @@
+1.用过react哪些hooks函数
+2.讲一下usememo
+3.useEffect会不会产生闭包，产生闭包怎么处理
+4.讲一下闭包，什么情况下使用闭包
+5.讲一下session是怎么存储用户登录信息的，前端需要怎么配合
+6.讲一下TS的interface的理解
+7.query和params的区别是什么
+8.讲一下promise
+9.promise可以中断吗
+10.cookie和session区别是什么

@@ -1,0 +1,4 @@
+# react-redux
+
+通过createSlice这个库函数，来简化Redux的reducer和action。reducers来定义redux存储的初始状态。reducers对象包含多个函数，每个函数对应一种特定的动作类型。主要负责根据传来的action来更新应用状态。reducer函数接受两个参数当前状态state和动作对象action。可以使用 useDispatch 钩子获取dispatch函数，然后调用dispatch并传入reducers导出的方法来触发reducers里的函数来修改state数据，使用useSelector钩子函数来获取store数据
+
