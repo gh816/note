@@ -44,3 +44,51 @@ Vue3的函数式组件只执行1次：在组件第一次渲染时，就会执行
 React的JSX语法本质上是对象，无法使用闭包进行缓存。
 
 而React之所以不使用闭包，是为了实现并发模式（每一次更新的状态都要保存下来，中断后可恢复）。
+
+# 解决方法
+
+#### 1. **将条件逻辑移到组件外部**：
+
+将条件逻辑提升到组件外部，或者拆分成多个组件，确保每个组件的 Hooks 调用顺序是稳定的。
+
+```
+function MyComponent({ condition }) {
+  if (condition) {
+    return <ComponentWithHook />;
+  } else {
+    return <ComponentWithoutHook />;
+  }
+}
+
+function ComponentWithHook() {
+  const [state, setState] = React.useState(0); // 稳定的调用顺序
+  return <div>Component with Hook</div>;
+}
+
+function ComponentWithoutHook() {
+  return <div>Component without Hook</div>;
+}
+```
+
+#### 2. **使用自定义 Hook**：
+
+将条件逻辑封装到自定义 Hook 中，确保自定义 Hook 内部的 Hooks 调用顺序是稳定的。
+
+```
+function useCustomHook(condition) {
+  if (condition) {
+    const [state, setState] = React.useState(0);
+    return state;
+  }
+  return null;
+}
+
+function MyComponent({ condition }) {
+  const state = useCustomHook(condition); // 稳定的调用顺序
+  return <div>{state}</div>;
+}
+```
+
+#### 3. **使用 `useEffect` 处理条件逻辑**：
+
+如果需要在某些条件下执行副作用，可以使用 `useEffect`，因为 `useEffect` 的调用顺序是稳定的。
