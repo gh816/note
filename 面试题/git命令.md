@@ -45,3 +45,7 @@
 ### git push origin 仓库名
 
 这个命令是把本地代码提交到远程仓库
+
+### git  reset HEAD~1
+
+撤销上次本地提交

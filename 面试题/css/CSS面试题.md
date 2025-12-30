@@ -30,7 +30,10 @@
 
 ## BFC理解与应用
 
-![image-20240110162722206](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240110162722206.png)
+
+
+内容塌陷：如果父元素当中有子元素且子元素浮动了，可能会产生高度坍塌
+BFC是用于控制块级元素布局的渲染区域，这个区域有自己的渲染规则，内部元素的布局不会影响
 
 ![image-20240110163055633](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240110163055633.png)
 

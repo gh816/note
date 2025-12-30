@@ -1,0 +1,14 @@
+1.reactHooks有哪些
+2.useEffect模拟了哪几种生命周期
+3.useEffect可以不写第二个参数吗
+4.usecallbcak和useMemo区别是什么
+5.React组价是如何通信的
+6.useRef有什么作用
+7.react路由传参有哪些方式
+8.redux
+9.promise有哪些对象
+10.js数组有哪些方法
+11.forEach和map区别
+12.const var let 区别
+13.现在有一个div，上面的div固定一个宽度，下面的div我想让它根据屏幕的高度变化自适应我该怎么做
+14.数组去重的方法
